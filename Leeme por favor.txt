@@ -1,0 +1,2 @@
+AL Entrar en index.html directo desde el local no carga la imagen de fondo,le sugiero que pueda entrar en este enlace
+que he subido al hosting y aparece completo con la imagen de fondo https://mycenaean-ration.000webhostapp.com/
