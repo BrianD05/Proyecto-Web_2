@@ -1,0 +1,303 @@
+/* Importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("/img/mifondo.webp");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.inicio .contenido-seccion{
+
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding:  0 10px;
+}
+
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+/* Menú Lateral */
+
+.inicio .contenido-seccion header nav{
+    position: fixed ;
+    margin-left: 60px;
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+
+.inicio .contenido-seccion header nav a{
+
+    display: block;
+    color:black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ******** */
+
+.inicio .contenido-seccion header .logo{
+
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion header .logo .color{
+
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.inicio .contenido-seccion header .nav-bar{
+
+    position:fixed;
+    background-color: yellow;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+    color: black;
+}
+
+.inicio .contenido-seccion header .nav-bar:hover{
+
+    box-shadow: 0 0 35px #fff;
+}
+
+.inicio .contenido-seccion .info{
+
+    padding-bottom: 130px;
+
+}
+
+.inicio .contenido-seccion .info h1{
+
+    font-size: 3rem;
+
+    letter-spacing: 5px;
+}
+
+.inicio .contenido-seccion .info h2{
+
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10 px;
+    letter-spacing: 5px;
+
+}
+
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: cyan;
+    border: 1px solid black;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 10px ;
+    transition: .5s;
+}
+
+.inicio .contenido-seccion .info .redes a:hover{
+    color: black;
+    background-color: yellow;
+    box-shadow: 0 0 30px  yellow;
+}
+
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+
+.inicio .contenido-seccion .foto img{
+
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid rgb(128, 98, 0);
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    transform: translateX(-50%);
+}
+
+/* estilos generales */
+.titulo-seccion{
+    font-family: "Yellowtail";
+    font-size: 2.5rem;
+}
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: rgb(241, 232, 232);
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.sobremi .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.sobremi .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.sobremi .contenido-seccion .especial{
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobremi .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: rgb(250, 31, 2);
+}
+.sobremi .contenido-seccion .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido-seccion .fila .col{
+    width: 30%;
+}
+.sobremi .contenido-seccion .fila .col i{
+    color: orange;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobremi .contenido-seccion .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+/* SECCION RESUMEN */
+.resumen{
+    background-color: rgb(255, 255, 255);
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.resumen .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido-seccion .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+    width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    border: 3px solid rgb(225, 207, 15);
+    padding: 10px;
+    background-color: yellow;
+
+}
+.resumen .contenido-seccion .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido-seccion .info .col table .datos{
+    width: 50%;
+    border-bottom: 4px solid red;
+}
+.resumen .contenido-seccion .info .col table h4{
+    margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+    font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+    border-left: 4px solid red;
+    padding-left: 20px;
+}
+/* SECCION CONTACTO */
+.contacto{
+    background-color: gray;
+    padding: 140px 0 100px 0;
+    color: black;
+    text-align: center;
+}
+.contacto .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contacto .contenido-seccion .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido-seccion .fila .col{
+    margin-top: 50px;
+}
+.contacto .contenido-seccion .fila .col h2{
+    color: red;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:800px){
+    .sobremi .contenido-seccion .fila{
+        display: block;
+    }
+    .sobremi .contenido-seccion .fila .col{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .resumen .contenido-seccion .info{
+        display: block;
+    }
+    .resumen .contenido-seccion .info .col{
+        width: 90%;
+        margin: auto;
+    }
+    .resumen .contenido-seccion .info .col .titulo{
+        display: block;
+        text-align: center;
+    }
+    .resumen .contenido-seccion .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contacto .contenido-seccion .fila{
+        display: block;
+    }
+}
